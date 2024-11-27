@@ -7,8 +7,7 @@
 -   MySQL atau MariaDB
 ### Langkah-langkah
 
-1. Clone repositori
-    Clone repository ini atau download file ZIP-nya.
+1. `Clone repositori` ini atau `download file ZIP-nya`.
 
 2. Masuk ke direktori/folder `e-commerce`
     ```bash
@@ -16,9 +15,9 @@
     ```
     atau
 
-    open folder di visual code atau aplikasi lainnya 
+    `open folder` di visual studio code atau aplikasi lainnya 
 
-3. Hapus file 'composer.lock'
+3. Hapus file `composer.lock`
    
 4.  Install dependensi
     ```bash
@@ -31,20 +30,20 @@
 5. Copy file `.env.example` menjadi `.env`
 
 6. Buat Database
-   dengan nama database 'db_ecommerce'
+   > Dengan nama database `db_ecommerce`
 
 7. Migrasi Database
-   Jalankan perintah berikut untuk membuat tabel di database:
+   > Jalankan perintah berikut untuk membuat tabel di database:
     ```bash
     php artisan migrate
     ```
 8. Seed Database
-   Jalankan perintah berikut untuk mengisi database dengan data awal:
+   > Jalankan perintah berikut untuk mengisi database dengan data awal:
     ```bash
     php artisan migrate:fresh --seed
     ```
 9. Jalankan NPM
-   Jalankan perintah berikut untuk meng-compile aset frontend:    
+   > Jalankan perintah berikut untuk meng-compile aset frontend:    
     ```bash
     npm run dev
     ```
@@ -63,8 +62,8 @@
 
     > [!NOTE]
     > Pastikan _dua terminal berjalan_:
-    > Satu terminal menjalankan 'npm run dev'.
-    > Satu terminal menjalankan 'php artisan serve'.
+    > Satu terminal menjalankan `npm run dev`.
+    > Satu terminal menjalankan `php artisan serve`.
 
 ## Akun Login
 #### Akun Admin
