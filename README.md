@@ -8,19 +8,17 @@
 ### Langkah-langkah
 
 1. Clone repositori
-    ```bash
     Clone repository ini atau download file ZIP-nya.
-    ```
+
 2. Masuk ke direktori/folder `e-commerce`
     ```bash
     cd e-commerce 
     ```
     atau
 
-    ```bash
     open folder di visual code atau aplikasi lainnya 
-    ```
-3. Hapus file composer.lock
+
+3. Hapus file 'composer.lock'
    
 4.  Install dependensi
     ```bash
@@ -33,7 +31,7 @@
 5. Copy file `.env.example` menjadi `.env`
 
 6. Buat Database
-   dengan nama database db_ecommerce
+   dengan nama database 'db_ecommerce'
 
 7. Migrasi Database
    Jalankan perintah berikut untuk membuat tabel di database:
