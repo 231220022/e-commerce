@@ -15,7 +15,7 @@
       <div class="hidden lg:relative lg:block lg:p-12">
         <a class="block text-white" href="{{ route('home.index') }}">
           <span class="sr-only">Beranda</span>
-          LOGO
+        KLAMBI MART
         </a>
 
         <h2 class="mt-6 text-2xl font-bold text-white sm:text-3xl md:text-4xl">
