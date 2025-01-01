@@ -24,7 +24,7 @@
       @forelse ( $products as $product )
         
       <li>
-        <a href="#" class="relative block overflow-hidden group">
+        <a href="#" class="no-underline relative block overflow-hidden group">
         
           <img
             src="{{ asset('./storage/products/' .$product->image) }}"
@@ -62,7 +62,7 @@
         
               <a
                 href="{{ route('checkout.buy_now', $product->slug) }}"
-                class="block w-full px-4 py-3 text-sm font-medium text-white transition bg-gray-900 hover:scale-105"
+                class="no-underline block w-full px-4 py-3 text-sm font-medium text-white transition bg-gray-900 hover:scale-105"
               >
                 Beli Sekarang
               </a>
@@ -113,7 +113,7 @@
               <li class="block leading-8 text-center text-white bg-black border-black size-8">{{ $page }}</li>
           @else
               <li>
-                  <a href="{{ $url }}" class="block leading-8 text-center border border-gray-100 size-8">{{ $page }}</a>
+                  <a href="{{ $url }}" class=" no-underline block leading-8 text-center border border-gray-100 size-8">{{ $page }}</a>
               </li>
           @endif
       @endforeach
@@ -121,7 +121,7 @@
       <!-- Tombol Next -->
       @if ($products->hasMorePages())
           <li>
-              <a href="{{ $products->nextPageUrl() }}" class="inline-flex items-center justify-center border border-gray-100 size-8">
+              <a href="{{ $products->nextPageUrl() }}" class="no-underline inline-flex items-center justify-center border border-gray-100 size-8">
                   <span class="sr-only">Next Page</span>
                   <svg xmlns="http://www.w3.org/2000/svg" class="size-3" viewBox="0 0 20 20" fill="currentColor">
                       <path

@@ -12,7 +12,7 @@
       <div class="mt-4 md:mt-8">
         <a
           href="{{ route('products.index') }}"
-          class="inline-block px-12 py-3 text-sm font-medium text-white transition bg-slate-950 hover:bg-slate-900 focus:outline-none focus:ring focus:ring-yellow-400"
+          class="no-underline inline-block px-12 py-3 text-sm font-medium text-white transition bg-slate-950 hover:bg-slate-900 focus:outline-none focus:ring focus:ring-yellow-400"
         >
           Mulai Berbelanja Sekarang
         </a>

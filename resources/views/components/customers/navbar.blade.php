@@ -1,7 +1,7 @@
 <header class="" x-data="{ open: false, profileOpen: false }">
   <div class="fixed z-50 w-full px-4 shadow-sm bg-slate-50 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <a class="block text-teal-600 md:mr-8" href="#">
+      <a class="no-underline block text-teal-600 md:mr-8" href="#">
         <span class="sr-only">Home</span>
         KLAMBI MART
       </a>
@@ -11,14 +11,14 @@
         <nav aria-label="Global" class="hidden md:block">
           <ul class="flex items-center gap-6">
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 {{ request()->routeIs('home.index') ? 'text-gray-900 font-semibold border-b-2 border-gray-900' : '' }}" href="{{ route('home.index') }}"> Beranda </a>
+              <a class="no-underline text-gray-500 transition hover:text-gray-500/75 {{ request()->routeIs('home.index') ? 'text-gray-900 font-semibold border-b-2 border-gray-900' : '' }}" href="{{ route('home.index') }}"> Beranda </a>
             </li>
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 {{ request()->routeIs('products.index') ? 'text-gray-900 font-semibold border-b-2 border-gray-900' : '' }}" href="{{ route('products.index') }}"> Produk </a>
+              <a class="no-underline text-gray-500 transition hover:text-gray-500/75 {{ request()->routeIs('products.index') ? 'text-gray-900 font-semibold border-b-2 border-gray-900' : '' }}" href="{{ route('products.index') }}"> Produk </a>
             </li>
             @auth
             <li>
-              <a class="text-gray-500 transition hover:text-gray-500/75 {{ request()->routeIs('orders.index') ? 'text-gray-900 font-semibold border-b-2 border-gray-900' : '' }}" href="{{ route('orders.index') }}"> Pesanan </a>
+              <a class="no-underline text-gray-500 transition hover:text-gray-500/75 {{ request()->routeIs('orders.index') ? 'text-gray-900 font-semibold border-b-2 border-gray-900' : '' }}" href="{{ route('orders.index') }}"> Pesanan </a>
             </li>
             @endauth
           </ul>
@@ -27,9 +27,9 @@
         <div class="flex items-center gap-4">
           @if (!Auth::check())
           <div class="sm:flex sm:gap-4">
-            <a class="bg-slate-950 px-5 py-2.5 font-medium text-white shadow" href="{{ route('login') }}"> Masuk </a>
+            <a class="no-underline bg-slate-950 px-5 py-2.5 font-medium text-white shadow" href="{{ route('login') }}"> Masuk </a>
             <div class="hidden sm:flex">
-              <a class="border border-slate-950 px-5 py-2.5 font-medium text-slate-950" href="{{ route('register') }}"> Daftar </a>
+              <a class="no-underline border border-slate-950 px-5 py-2.5 font-medium text-slate-950" href="{{ route('register') }}"> Daftar </a>
             </div>
           </div>
           @else
@@ -55,21 +55,21 @@
               @endif
               <hr>
               @if (Auth::user()->role == 'admin')
-              <a href="{{ route('dashboard.index') }}" class="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100">
+              <a href="{{ route('dashboard.index') }}" class="no-underline flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100">
                 <i class='bx bxs-dashboard'></i> Dashboard
               </a>
               <hr>
               @endif
               @if (Auth::user()->role == 'customer')
-              <a href="{{ route('cart.index') }}" class="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100">
+              <a href="{{ route('cart.index') }}" class="no-underline flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100">
                 <i class='bx bx-cart'></i> Keranjang
               </a>
-              <a href="{{ route('profile.index') }}" class="flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100">
+              <a href="{{ route('profile.index') }}" class="no-underline flex items-center gap-2 px-4 py-2 text-gray-700 hover:bg-gray-100">
                 <i class='bx bx-user'></i> Profil
               </a>
               <hr>
               @endif
-              <a href="{{ route('logout') }}" class="block px-4 py-2 text-red-600 hover:bg-red-100 hover:text-red-700">
+              <a href="{{ route('logout') }}" class="no-underline block px-4 py-2 text-red-600 hover:bg-red-100 hover:text-red-700">
                 <i class='bx bx-log-out'></i> Keluar
               </a>
             </div>
@@ -101,17 +101,17 @@
       aria-label="Global"
       class="md:hidden">
       <ul class="px-4 pb-4 mt-2 space-y-2 text-sm">
-        <li><a class="block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('home.index') }}"> Beranda </a></li>
-        <li><a class="block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('products.index') }}"> Produk </a></li>
-        <li><a class="block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('orders.index') }}"> Pesanan </a></li>
+        <li><a class="no-underline block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('home.index') }}"> Beranda </a></li>
+        <li><a class="no-underline block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('products.index') }}"> Produk </a></li>
+        <li><a class="no-underline block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('orders.index') }}"> Pesanan </a></li>
         @guest
-        <li><a class="block bg-slate-950 px-5 py-2.5 text-sm font-medium text-white text-center" href="{{ route('login') }}"> Masuk </a></li>
-        <li><a class="block bg-gray-100 px-5 py-2.5 text-sm font-medium text-slate-950 text-center" href="{{ route('register') }}"> Daftar </a></li>
+        <li><a class="no-underline block bg-slate-950 px-5 py-2.5 text-sm font-medium text-white text-center" href="{{ route('login') }}"> Masuk </a></li>
+        <li><a class="no-underline block bg-gray-100 px-5 py-2.5 text-sm font-medium text-slate-950 text-center" href="{{ route('register') }}"> Daftar </a></li>
         @endguest
         @auth
-        <li><a class="block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('cart.index') }}"> Keranjang </a></li>
-        <li><a class="block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('profile.index') }}"> Profil </a></li>
-        <li><a class="block bg-slate-950 px-5 py-2.5 text-sm font-medium text-white text-center" href="{{ route('logout') }}"> Keluar </a></li>
+        <li><a class="no-underline block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('cart.index') }}"> Keranjang </a></li>
+        <li><a class="no-underline block py-2 text-gray-700 transition hover:text-gray-500" href="{{ route('profile.index') }}"> Profil </a></li>
+        <li><a class="no-underline block bg-slate-950 px-5 py-2.5 text-sm font-medium text-white text-center" href="{{ route('logout') }}"> Keluar </a></li>
         @endauth
       </ul>
     </nav>

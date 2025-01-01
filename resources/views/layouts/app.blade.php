@@ -6,6 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'E-Commerce')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+      
+    }
+    .no-underline {
+      text-decoration: none;
+  }
+  </style>
 </head>
 <body class="bg-slate-50" x-data="{ open: false, profileOpen: false, showMessage: true }">
     @include('components.customers.navbar')
