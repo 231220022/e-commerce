@@ -2,7 +2,7 @@
   <div class="flex items-center h-16 max-w-screen-xl gap-8 px-4 mx-auto sm:px-6 lg:px-8">
     <a class="block text-teal-600" href="#">
       <span class="sr-only">Home</span>
-      KALMBI MART
+      KLAMBI MART
     </a>
 
     <div class="flex items-center justify-end flex-1 md:justify-between">
